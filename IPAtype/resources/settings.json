@@ -1,0 +1,14 @@
+{
+  "show_diacs": true, 
+  "show_tones": true, 
+  "type_ipa": true, 
+  "show_others": true, 
+  "show_suprasegs": true, 
+  "show_toolbar": true, 
+  "mw_width": 790, 
+  "mw_height": 628, 
+  "use_tabs": true, 
+  "show_pul_cons": true, 
+  "show_vowels": true, 
+  "show_npul_cons": true
+}

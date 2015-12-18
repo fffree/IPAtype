@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="C:\Users\florian.breit.12\Desktop\IPAtype2\icon.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3801">
+      <stop
+         style="stop-color:#f9f9f9;stop-opacity:1;"
+         offset="0"
+         id="stop3803" />
+      <stop
+         style="stop-color:#f9f9f9;stop-opacity:0;"
+         offset="1"
+         id="stop3805" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3801"
+       id="radialGradient3807"
+       cx="-198.242"
+       cy="883.36908"
+       fx="-198.242"
+       fy="883.36908"
+       r="250"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-3.605254e-8,2.0029457,-1.9978789,-3.5961339e-8,1765.3567,949.92246)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="106.80067"
+     inkscape:cy="242.9162"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1406"
+     inkscape:window-height="896"
+     inkscape:window-x="25"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-552.36218)">
+    <rect
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none"
+       id="rect3013"
+       width="500"
+       height="500"
+       x="0"
+       y="552.36218"
+       rx="50"
+       ry="50" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect3011"
+       width="529.31995"
+       height="260.61935"
+       x="-0.98984802"
+       y="682.62604" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-4.0406117"
+       y="924.29614"
+       id="text2985"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="-4.0406117"
+         y="924.29614"
+         style="font-size:500px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">aɪ̯<tspan
+   style="font-size:450px"
+   id="tspan3009">.</tspan></tspan></text>
+    <path
+       style="fill:#808080;stroke:#808080;stroke-width:5.01274347000000020px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 18.506372,943.87503 466.690478,0"
+       id="path2989"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#808080;stroke:#808080;stroke-width:5.01274347000000020px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 18.506372,682.22505 466.690478,0"
+       id="path2989-1"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:url(#radialGradient3807);fill-opacity:1;stroke:none;opacity:0.5"
+       id="rect3013-7"
+       width="500"
+       height="500"
+       x="0"
+       y="552.36218"
+       rx="50"
+       ry="50" />
+  </g>
+</svg>
