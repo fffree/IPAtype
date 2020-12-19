@@ -15,6 +15,18 @@ pip install ipapad-{version}.whl
 
 If you are on Windows you might prefer the windows installer (currently only for Windows 10, 64bit), as this will also create the regular shortcuts in the start menu. The Windows installer includes its own python interpreter, so there's no need to install anything else.
 
+### Building *ipapad* yourself
+
+To build the python wheel with setuptools and the pep517 installer, use the following command inside the parent `ipapad` directory (the one containing `setup.cfg`):
+```bash
+python -m pep517.build .
+```
+
+To build the Windows installer, you have to have NSIS and pynsist installed on your system. Provided these are installed, go into the packaged base directory (the one containing `installer.cfg`) and run the following command:
+```bash
+pynsist installer.cfg
+```
+
 ## Usage
 
 ### Launching IPA Pad
