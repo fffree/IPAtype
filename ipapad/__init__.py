@@ -6,16 +6,16 @@
 """
 A tool for writing in the International Phonetic Alphabet.
 
-IPAtype is a Qt-GUI based text editor with special key mappings and clickable
-charts that helps you write in the International Phonetic Alphabet (IPA).
+IPAPad is a Qt-GUI based plain text editor with special key mappings and
+clickable chart components that helps you write phonetic transcriptions in
+the International Phonetic Alphabet (IPA).
 """
 
 #
 # Imports
 #
-import shared
-import widgets
-import __main__
+from . import shared
+#from . import __main__
 
 #
 # Module Properties
