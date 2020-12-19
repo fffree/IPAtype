@@ -1,16 +1,23 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+Shared objects for IPAPad.
+
+This file contains a few objects required by several components of the module.
+Mainly these are variables containing module information (__author__, etc.) and
+the IPA character map (IPAchars) together with a list of shortcuts for each
+symbol (IPAshortcuts).
+"""
 
 #
-# Program Information
+# Package Information
 #
 __author__ = "Florian Breit"
 __contact__ = "Florian Breit <florian.breit.12@ucl.ac.uk>"
-__copyright__ = "(c) 2012-2015 Florian Breit"
+__copyright__ = "(c) 2020 Florian Breit"
 __license__ = "GNU General Public License, Version 3"
-__date__ = "16 Dec 2015"
-__version__ = "2.0.0"
-__title__ = "IPAtype"
+__date__ = "17 Dec 2020"
+__version__ = "0.1"
+__title__ = "IPAPad"
 
 #
 # IPA character maps
@@ -31,7 +38,7 @@ __title__ = "IPAtype"
 # Symbols used with CTRL shortcut:
 #   0
 #   FEVH
-IPAchars = {
+ipa_chars = {
     #PULMONIC CONSONANTS
     'p' : {'name':'Voiceless bilabial plosive',         'shortcut':'p'},
     'b' : {'name':'Voiced bilabial plosive',            'shortcut':'b'},
@@ -225,25 +232,25 @@ IPAchars = {
     '〉' : {'name':'Right angle bracket',                'shortcut':'>'},
 }
 # Now let's programatically add a field of the actual character (i.e. remove ◌'s)
-for key in IPAchars.keys():
-    if key is "◌":
-        IPAchars[key]['char'] = "◌"
+for key in ipa_chars.keys():
+    if key == "◌":
+        ipa_chars[key]['char'] = "◌"
     else:
-        IPAchars[key]['char'] = key.replace("◌", "")
+        ipa_chars[key]['char'] = key.replace("◌", "")
 del(key)
 
 #
 # Map of IPA shortcut symbols
 #
-IPAshortcuts = {}
-for label, props in IPAchars.items():
+ipa_shortcuts = {}
+for label, props in ipa_chars.items():
     if props['shortcut']:
-        if props['shortcut'] in IPAshortcuts:
+        if props['shortcut'] in ipa_shortcuts:
             print(
                 "OH NO! The Shortcut %s is used twice! For %s and for %s"
-                % (props['shortcut'], IPAshortcuts[props['shortcut']]['name'], props['name'])
+                % (props['shortcut'], ipa_shortcuts[props['shortcut']]['name'], props['name'])
             )
-        IPAshortcuts[props['shortcut']] = {
+        ipa_shortcuts[props['shortcut']] = {
             'label':    label,
             'char':     props['char'],
             'name':     props['name'],
