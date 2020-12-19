@@ -1,4 +1,3 @@
-IPAtype 2.0.0
-=============
+# IPA Pad
 
 To be written..?
