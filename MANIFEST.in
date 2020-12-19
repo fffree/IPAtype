@@ -1,2 +1,4 @@
 include README.md
 include ipapad/resources/*
+include ipapad/resources/icons/*
+include ipapad/resources/icons/*/*
