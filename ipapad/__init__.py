@@ -15,7 +15,6 @@ the International Phonetic Alphabet (IPA).
 # Imports
 #
 from . import shared
-#from . import __main__
 
 #
 # Module Properties
