@@ -102,8 +102,7 @@ class MainWindow(QMainWindow):
 
         #Enable/disable all the appropriate buttons
         self.toggle_editing_actions(True)
-        self.actions["undo"].setEnabled(False)
-        self.actions["redo"].setEnabled(False)
+        self.check_undo_redo_available()
 
     def action_open(self):
         """Open a text file as a new IPAtype Document"""
@@ -139,8 +138,7 @@ class MainWindow(QMainWindow):
             self.statusBar().showMessage(f"Successfully loaded { filename[0] }")
             #Enable/disable all the appropriate buttons
             self.toggle_editing_actions(True)
-            self.actions["undo"].setEnabled(False)
-            self.actions["redo"].setEnabled(False)
+            self.check_undo_redo_available()
             return True
         return False
 
@@ -252,6 +250,18 @@ class MainWindow(QMainWindow):
 
     def action_x(self):
         raise NotImplementedError
+
+    def check_undo_redo_available(self):
+        """Check if undo/redo actions are available and update enabled status of GUI actions"""
+        document = self.top_widget.get_document()
+        if document.availableUndoSteps():
+            self.actions['undo'].setEnabled(True)
+        else:
+            self.actions['undo'].setEnabled(False)
+        if document.availableRedoSteps():
+            self.actions['redo'].setEnabled(True)
+        else:
+            self.actions['redo'].setEnabled(False)
 
     def closeEvent(self, event):
         """Overwrite closeEvent handler to redirect to self.action_exit()"""
@@ -523,7 +533,7 @@ class MainWindow(QMainWindow):
         # Link Undo and Redo buttons to top_widget's Undo-stack
         self.top_widget.text_edit.undoAvailable.connect(
             self.actions["undo"].setEnabled)
-        self.top_widget.text_edit.undoAvailable.connect(
+        self.top_widget.text_edit.redoAvailable.connect(
             self.actions["redo"].setEnabled)
 
         # Update window title
@@ -531,6 +541,7 @@ class MainWindow(QMainWindow):
 
         # Show Window
         self.show()
+
 
     def init_settings(self):
         """Load program settings from file"""
