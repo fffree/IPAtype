@@ -45,7 +45,10 @@ class WriterWidget(QWidget):
         # TODO: Somehow change this so that the clearing becomes part of the Undo/Redo stack.
         # Currently after calling .clear() there's no Undo available. Why?
         # Maybe just replace all the text with nothing manually?
-        return self.text_edit.clear()
+        self.text_edit.selectAll()
+        cursor = self.text_edit.textCursor()
+        cursor.removeSelectedText()
+        #return self.text_edit.clear()
 
     def copy(self):
         """Copy current selection to clipboard. If no slection, copy everything."""
